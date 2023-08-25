@@ -32,15 +32,27 @@ const dopo = document.getElementById("dopo");
 
 
 
-//for(game of images){
-//  main.innerHTML += `
-//  <div class="card">
-//      <img src="./${game.image}" class="card-img-top" alt="${game.title}">
-//      <div class="card-body">
-//        <h3>${game.title}</h3>
-//        <p class="card-text">${game.text}</p>
-//      </div>
-//    </div>
-//  `
-//};
+
+
+for(game of images){
+  main.innerHTML += `
+  <div class="card d-no" id="prova">
+  <img src="./${game.image}" class="card-img-top" alt="${game.title}">
+  <div class="card-body">
+  <h3>${game.title}</h3>
+  <p class="card-text">${game.text}</p>
+  </div>
+  </div>
+  `
+}
+
+const prova = document.getElementById("prova")
+
+for(i = 0; i < images.length; i++){
+  const slide = images[i];
+  document.getElementById("prova").classList.remove = "d-no";
+}
+
+
+
 
