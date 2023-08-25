@@ -48,7 +48,14 @@ for(game of images){
   `
 }
 
-  document.getElementById("card").classList.remove("d-no");
+function boh(){
+  game++;
+}
+
+a
+
+
+document.getElementById("card").classList.remove("d-no");
 
 
 
