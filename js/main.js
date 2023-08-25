@@ -26,17 +26,19 @@ const images = [
   },
 ];
 
+
 const main = document.getElementById("main");
 const prima = document.getElementById("prima");
 const dopo = document.getElementById("dopo");
+const slider = document.getElementById("slider");
 
 
 
 
 
 for(game of images){
-  main.innerHTML += `
-  <div class="card d-no" id="prova">
+  slider.innerHTML += `
+  <div class="card d-no" id="card">
   <img src="./${game.image}" class="card-img-top" alt="${game.title}">
   <div class="card-body">
   <h3>${game.title}</h3>
@@ -46,12 +48,15 @@ for(game of images){
   `
 }
 
-const prova = document.getElementById("prova")
+  document.getElementById("card").classList.remove("d-no");
 
-for(i = 0; i < images.length; i++){
-  const slide = images[i];
-  document.getElementById("prova").classList.remove = "d-no";
-}
+
+
+
+
+
+
+
 
 
 
