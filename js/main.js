@@ -33,12 +33,16 @@ const slider = document.getElementById("slider");
 
 const items = document.getElementsByClassName("d-no");
 
+const mini = document.getElementById("mini-slider");
+const img = document.getElementsByClassName("miniature");
+
 console.log(items);
 
 let index = 0;
 
 dopo.addEventListener("click", function () {
   document.querySelector(".active").classList.remove("active");
+  document.querySelector(".bordo").classList.remove("bordo");
   if (index < 4) {
     index++;
   } else {
@@ -46,10 +50,13 @@ dopo.addEventListener("click", function () {
   }
 
   items[index].classList.add("active");
+
+  img[index].classList.add("bordo");
 });
 
 prima.addEventListener("click", function () {
   document.querySelector(".active").classList.remove("active");
+  document.querySelector(".bordo").classList.remove("bordo");
   if (index > 0) {
     index--;
   } else {
@@ -57,4 +64,5 @@ prima.addEventListener("click", function () {
   }
 
   items[index].classList.add("active");
+  img[index].classList.add("bordo");
 });
